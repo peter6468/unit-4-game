@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.3.1.min.js">
+    
+    var test = "I am here";
+
+
+var random_result;
+var lost;
+var win
+
+random_result = Math.floor(Math.random() * 69 )+ 30
+console.log(random_result)
+
+
+
+$("#result").html('Hello World!');
+for(var i = 0; i < 4; i++){
+    var random = Math.floor(Math.random() * 11) +1;
+    console.log(random);
+
+    var crystal =$("div");
+        crystal.attr({
+            "class": random
+        });
+    
+    $('.crystals').append(crystals);
+
+
+}
+
+$(".crystal").on('click', function () {
+    console.log($(this));
+});
+    
+    
+    
+    
+    
+    
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <p id= "result"></p>
+
+    <div class="crystal">
+
+    </div>
+
+
+    
+</body>
+</html>
